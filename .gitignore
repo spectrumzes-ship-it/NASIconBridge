@@ -1,0 +1,12 @@
+.DS_Store
+*.app/
+backup/
+Backups/
+dist/
+work/
+*.zip
+last-run.json
+selection.json
+*.dSYM/
+.swiftpm/
+.build/

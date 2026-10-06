@@ -1,0 +1,786 @@
+[
+  {
+    "zh": "將 AFP 的 Finder 自訂資料夾圖示重新套用至 SMB",
+    "en": "Transfer Finder custom folder icons from AFP to SMB"
+  },
+  {
+    "zh": "AFP 來源（有圖示）",
+    "en": "AFP source (existing icons)"
+  },
+  {
+    "zh": "SMB 目標（套用圖示）",
+    "en": "SMB destination (apply icons)"
+  },
+  {
+    "zh": "清除",
+    "en": "Clear"
+  },
+  {
+    "zh": "選擇資料夾……",
+    "en": "Choose folder…"
+  },
+  {
+    "zh": "已掛載的 {0}",
+    "en": "Mounted {0} shares"
+  },
+  {
+    "zh": "只接受 {0} 掛載；會檢查協定",
+    "en": "Accepts {0} mounts only; protocol is verified"
+  },
+  {
+    "zh": "已確認協定：{0}",
+    "en": "Verified protocol: {0}"
+  },
+  {
+    "zh": "將 Finder／桌面的資料夾拖到這裡",
+    "en": "Drop a folder from Finder or Desktop here"
+  },
+  {
+    "zh": "沒有找到此協定的掛載",
+    "en": "No mounts found for this protocol"
+  },
+  {
+    "zh": "重新整理掛載清單",
+    "en": "Refresh mounts"
+  },
+  {
+    "zh": "拖入共享根目錄或其中的資料夾均可；兩側必須是同一共享、同一層級。下層自訂圖示會自動遞迴處理。",
+    "en": "Choose the share root or a subfolder. Both sides must refer to the same share and level. Subfolders are scanned recursively."
+  },
+  {
+    "zh": "測試掃描",
+    "en": "Preview scan"
+  },
+  {
+    "zh": "只預覽結果，不寫入 NAS",
+    "en": "Preview only; no NAS writes"
+  },
+  {
+    "zh": "正式套用",
+    "en": "Apply icons"
+  },
+  {
+    "zh": "自動備份，再寫入及驗證圖示",
+    "en": "Back up, write and verify icons"
+  },
+  {
+    "zh": "顯示備份",
+    "en": "Show backups"
+  },
+  {
+    "zh": "匯出結果",
+    "en": "Export results"
+  },
+  {
+    "zh": "從備份還原",
+    "en": "Restore from backup"
+  },
+  {
+    "zh": "正式套用會先檢測 SMB、保存本機備份，再寫入圖示。AFP 與 SMB 若指向同一份 NAS 資料，圖示變更也可能反映於 AFP；還原亦會影響同一份資料。",
+    "en": "Apply tests SMB support and saves a local backup before writing icons. AFP and SMB may share the same NAS data, so changes and restores may also appear over AFP."
+  },
+  {
+    "zh": "其他工具與還原",
+    "en": "More tools and restore"
+  },
+  {
+    "zh": "檢測 SMB 支援",
+    "en": "Test SMB support"
+  },
+  {
+    "zh": "手動選擇備份並套用",
+    "en": "Choose backup location and apply"
+  },
+  {
+    "zh": "預覽可還原項目（不寫入）",
+    "en": "Preview restore (no writes)"
+  },
+  {
+    "zh": "復原中斷寫入",
+    "en": "Recover interrupted writes"
+  },
+  {
+    "zh": "自動備份：{0}",
+    "en": "Automatic backups: {0}"
+  },
+  {
+    "zh": "最近備份：{0}",
+    "en": "Latest backup: {0}"
+  },
+  {
+    "zh": "成功代表 metadata 寫入及讀回通過。Finder 快取與 NAS 重新掛載後的保留情況，仍須實際確認。",
+    "en": "Success confirms metadata write/read verification. Check Finder appearance and persistence after remounting separately."
+  },
+  {
+    "zh": "停止後續項目",
+    "en": "Stop after current item"
+  },
+  {
+    "zh": "操作已結束",
+    "en": "Operation finished"
+  },
+  {
+    "zh": "部分完成，請查看失敗項目",
+    "en": "Partially completed; review failures"
+  },
+  {
+    "zh": "已停止",
+    "en": "Stopped"
+  },
+  {
+    "zh": "未完成，發生錯誤",
+    "en": "Not completed; an error occurred"
+  },
+  {
+    "zh": "上次完成狀態未知",
+    "en": "Previous completion status unknown"
+  },
+  {
+    "zh": "尚未開始",
+    "en": "Not started"
+  },
+  {
+    "zh": "正在處理",
+    "en": "Processing"
+  },
+  {
+    "zh": "本階段 {0}％",
+    "en": "This stage: {0}%"
+  },
+  {
+    "zh": "已處理 {0}／{1} 項",
+    "en": "Processed {0} / {1} items"
+  },
+  {
+    "zh": "已掃描 {0} 個資料夾；仍在搜尋，總數尚未知",
+    "en": "Scanned {0} folders; searching, total unknown"
+  },
+  {
+    "zh": "正在處理，請稍候……",
+    "en": "Processing, please wait…"
+  },
+  {
+    "zh": "結束時間：{0}",
+    "en": "Finished: {0}"
+  },
+  {
+    "zh": "請選擇同一個 NAS 共享資料夾的 AFP 與 SMB 根目錄。",
+    "en": "Choose the AFP and SMB roots of the same NAS share."
+  },
+  {
+    "zh": "上次結果已從畫面清除，但紀錄檔未能清除：{0}",
+    "en": "Previous results cleared from the screen, but the log file could not be removed: {0}"
+  },
+  {
+    "zh": "紀錄保存失敗",
+    "en": "Could not save log"
+  },
+  {
+    "zh": "目前沒有找到正式套用的自動備份。Dry run 預覽不會建立備份。",
+    "en": "No automatic backup found. Preview scans do not create backups."
+  },
+  {
+    "zh": "請選擇掛載路徑；也可按 ⌘⇧G 輸入 /Volumes/NAS 等完整路徑。",
+    "en": "Choose a mounted folder, or press ⌘⇧G to enter its full /Volumes/… path."
+  },
+  {
+    "zh": "選擇 AFP 根目錄",
+    "en": "Choose AFP root"
+  },
+  {
+    "zh": "選擇 SMB 根目錄",
+    "en": "Choose SMB root"
+  },
+  {
+    "zh": "已確認 {0}：{1}。兩側請選擇相同層級的資料夾。",
+    "en": "Verified {0}: {1}. Choose the same folder level on both sides."
+  },
+  {
+    "zh": "每個區域請只拖入一個資料夾。子資料夾會自動遞迴處理。",
+    "en": "Drop one folder per area. Subfolders are processed recursively."
+  },
+  {
+    "zh": "無法取得資料夾路徑。請從 Finder 拖入，或使用已掛載目錄選單。",
+    "en": "Could not read the folder path. Drop it from Finder or use the mounted shares menu."
+  },
+  {
+    "zh": "唯讀掃描中，未寫入 NAS……",
+    "en": "Read-only scan; no NAS writes…"
+  },
+  {
+    "zh": "掃描、檢測及備份套用中……",
+    "en": "Scanning, testing, backing up and applying…"
+  },
+  {
+    "zh": "請將 App 放在 Mac 本機磁碟；backup 必須保存在本機，不能放在 NAS",
+    "en": "Place the app on a local Mac disk; backups must be local, not on the NAS"
+  },
+  {
+    "zh": "無法建立 App 同層的 backup 資料夾：{0}。請把 App 放到可寫入的本機資料夾。{1}",
+    "en": "Could not create backup beside the app: {0}. Move the app to a writable local folder. {1}"
+  },
+  {
+    "zh": "目錄已更改，請重新掃描。",
+    "en": "Folder selection changed; scan again."
+  },
+  {
+    "zh": "繼續",
+    "en": "Continue"
+  },
+  {
+    "zh": "取消",
+    "en": "Cancel"
+  },
+  {
+    "zh": "開始處理",
+    "en": "Starting"
+  },
+  {
+    "zh": "唯讀掃描已停止，未寫入 NAS。",
+    "en": "Read-only scan stopped; no NAS writes."
+  },
+  {
+    "zh": "處理結束，部分項目失敗",
+    "en": "Finished with some failures"
+  },
+  {
+    "zh": "預覽完成",
+    "en": "Preview complete"
+  },
+  {
+    "zh": "處理完成",
+    "en": "Completed"
+  },
+  {
+    "zh": "發生錯誤",
+    "en": "Error"
+  },
+  {
+    "zh": "檢測目標 metadata 支援",
+    "en": "Test destination metadata support"
+  },
+  {
+    "zh": "會在 SMB 根目錄建立一個隨機命名的暫存資料夾，測試後刪除。現有資料夾不會被套用圖示。",
+    "en": "A uniquely named temporary folder will be created in the SMB root and removed after testing. Existing folder icons will not be changed."
+  },
+  {
+    "zh": "檢測 SMB 寫入支援……",
+    "en": "Testing SMB write support…"
+  },
+  {
+    "zh": "請先掃描並確認可套用項目。",
+    "en": "Scan first and review the applicable items."
+  },
+  {
+    "zh": "選擇本機備份位置；請勿選擇 NAS",
+    "en": "Choose a local backup location, not the NAS"
+  },
+  {
+    "zh": "套用 {0} 個資料夾圖示",
+    "en": "Apply {0} folder icons"
+  },
+  {
+    "zh": "備份位置：{0}\n\n若 AFP 與 SMB 指向同一個 NAS 資料夾，metadata 修改也可能反映於 AFP。一般檔案不會被搬移或刪除。請暫停其他程式對這些資料夾的修改。",
+    "en": "Backup location: {0}\n\nAFP and SMB may share the same NAS data, so metadata changes may also appear over AFP. Ordinary files are not moved or deleted. Pause other changes to these folders."
+  },
+  {
+    "zh": "保存備份並套用圖示……",
+    "en": "Saving backups and applying icons…"
+  },
+  {
+    "zh": "選擇包含 manifest.json 的 NASIconBridge 備份資料夾",
+    "en": "Choose a NASIconBridge backup folder containing manifest.json"
+  },
+  {
+    "zh": "還原 SMB 圖示",
+    "en": "Restore SMB icons"
+  },
+  {
+    "zh": "將以備份中的原始資料還原圖示。若圖示在套用後另有更改，會略過；「復原中斷寫入」會允許還原未完成的項目。",
+    "en": "Restore original icon data from the backup. Icons modified since applying will be skipped. Recover interrupted writes permits recovery of unfinished items."
+  },
+  {
+    "zh": "唯讀檢查可還原項目……",
+    "en": "Checking restorable items, read-only…"
+  },
+  {
+    "zh": "還原圖示……",
+    "en": "Restoring icons…"
+  },
+  {
+    "zh": "操作仍在執行。請先停止後續項目，並等目前項目完成，再結束 App。",
+    "en": "An operation is running. Stop subsequent items and wait for the current item to finish before quitting."
+  },
+  {
+    "zh": "結束 NAS Icon Bridge",
+    "en": "Quit NAS Icon Bridge"
+  },
+  {
+    "zh": "編輯",
+    "en": "Edit"
+  },
+  {
+    "zh": "複製",
+    "en": "Copy"
+  },
+  {
+    "zh": "全選",
+    "en": "Select All"
+  },
+  {
+    "zh": "關於",
+    "en": "About"
+  },
+  {
+    "zh": "關於 NAS Icon Bridge",
+    "en": "About NAS Icon Bridge"
+  },
+  {
+    "zh": "語言",
+    "en": "Language"
+  },
+  {
+    "zh": "製作者：Kevin",
+    "en": "Created by Kevin"
+  },
+  {
+    "zh": "版權所有 SPARKY",
+    "en": "Copyright SPARKY. All rights reserved."
+  },
+  {
+    "zh": "版本 {0}",
+    "en": "Version {0}"
+  },
+  {
+    "zh": "完成",
+    "en": "Done"
+  },
+  {
+    "zh": "本機磁碟（{0}）",
+    "en": "Local disk ({0})"
+  },
+  {
+    "zh": "未知",
+    "en": "Unknown"
+  },
+  {
+    "zh": "可套用",
+    "en": "Applicable"
+  },
+  {
+    "zh": "可還原",
+    "en": "Restorable"
+  },
+  {
+    "zh": "成功",
+    "en": "Success"
+  },
+  {
+    "zh": "失敗",
+    "en": "Failed"
+  },
+  {
+    "zh": "失敗／已回復",
+    "en": "Failed / rolled back"
+  },
+  {
+    "zh": "需手動還原",
+    "en": "Manual restore required"
+  },
+  {
+    "zh": "掃描失敗",
+    "en": "Scan failed"
+  },
+  {
+    "zh": "還原失敗",
+    "en": "Restore failed"
+  },
+  {
+    "zh": "略過",
+    "en": "Skipped"
+  },
+  {
+    "zh": "符號連結",
+    "en": "Symbolic link"
+  },
+  {
+    "zh": "掃描中",
+    "en": "Scanning"
+  },
+  {
+    "zh": "掃描完成",
+    "en": "Scan complete"
+  },
+  {
+    "zh": "掃描資料夾",
+    "en": "Scanning folders"
+  },
+  {
+    "zh": "已掃描 {0} 個資料夾",
+    "en": "Scanned {0} folders"
+  },
+  {
+    "zh": "已掃描 {0} 個；已找到 {1} 個圖示",
+    "en": "Scanned {0}; found {1} icons"
+  },
+  {
+    "zh": "正在搜尋；總數尚未知，未寫入 NAS",
+    "en": "Searching; total unknown, no NAS writes"
+  },
+  {
+    "zh": "找到 {0} 個對應圖示",
+    "en": "Found {0} matching icons"
+  },
+  {
+    "zh": "掃描 {0} 個資料夾，找到 {1} 個對應圖示。此操作未寫入 NAS。",
+    "en": "Scanned {0} folders; found {1} matching icons. No NAS writes."
+  },
+  {
+    "zh": "檢測 SMB 支援",
+    "en": "Test SMB support"
+  },
+  {
+    "zh": "正在獨立暫存資料夾測試 metadata",
+    "en": "Testing metadata in an isolated temporary folder"
+  },
+  {
+    "zh": "SMB 檢測通過",
+    "en": "SMB test passed"
+  },
+  {
+    "zh": "檢測通過",
+    "en": "Test passed"
+  },
+  {
+    "zh": "提示",
+    "en": "Notice"
+  },
+  {
+    "zh": "FinderInfo、Icon\\r 與 resource fork 可寫入及讀回。尚未驗證重新掛載後的持久性或 Finder 快取。",
+    "en": "FinderInfo, Icon\\r and resource forks can be written and read back. Persistence after remounting and Finder caching have not been verified."
+  },
+  {
+    "zh": "macOS 原生圖示重建失敗",
+    "en": "macOS native icon reconstruction failed"
+  },
+  {
+    "zh": "{0}。仍可原樣複製來源 resource fork；需要原生重建的項目將列為失敗。",
+    "en": "{0}. Raw source resource forks can still be copied; items requiring native reconstruction will be reported as failures."
+  },
+  {
+    "zh": "保存本機備份",
+    "en": "Saving local backups"
+  },
+  {
+    "zh": "核對及準備備份",
+    "en": "Checking and preparing backups"
+  },
+  {
+    "zh": "備份完成",
+    "en": "Backup saved"
+  },
+  {
+    "zh": "已保存所有來源圖示快照及目標原始 metadata",
+    "en": "All source icon snapshots and original destination metadata saved"
+  },
+  {
+    "zh": "套用及驗證圖示",
+    "en": "Applying and verifying icons"
+  },
+  {
+    "zh": "已還原",
+    "en": "Restored"
+  },
+  {
+    "zh": "讀取還原備份",
+    "en": "Reading restore backup"
+  },
+  {
+    "zh": "檢查可還原項目",
+    "en": "Checking restorable items"
+  },
+  {
+    "zh": "還原並驗證圖示",
+    "en": "Restoring and verifying icons"
+  },
+  {
+    "zh": "還原 SMB 原始圖示資料；一般檔案不受影響",
+    "en": "Restored original SMB icon data; ordinary files are unaffected"
+  },
+  {
+    "zh": "（根目錄）",
+    "en": "(Root)"
+  },
+  {
+    "zh": "預覽完成：找到 {0} 個可套用圖示；略過 {1} 項{2}。尚未寫入 NAS。",
+    "en": "Preview complete: {0} applicable icons; {1} skipped{2}. No NAS writes."
+  },
+  {
+    "zh": "套用完成：成功 {0} 項{1}。Finder 顯示仍需確認。",
+    "en": "Apply complete: {0} succeeded{1}. Check Finder appearance separately."
+  },
+  {
+    "zh": "部分完成：成功 {0} 項{1}。Finder 顯示仍需確認。",
+    "en": "Partially complete: {0} succeeded{1}. Check Finder appearance separately."
+  },
+  {
+    "zh": "掃描完成，沒有可套用的圖示；未修改 NAS。",
+    "en": "Scan complete; no applicable icons found. NAS unchanged."
+  },
+  {
+    "zh": "SMB 支援檢測完成{0}。既有資料夾圖示未套用。",
+    "en": "SMB support test finished{0}. Existing folder icons unchanged."
+  },
+  {
+    "zh": "還原預覽完成：{0} 項可還原{1}。尚未寫入 NAS。",
+    "en": "Restore preview complete: {0} restorable{1}. No NAS writes."
+  },
+  {
+    "zh": "部分還原：已還原 {0} 項{1}。",
+    "en": "Partially restored: {0} restored{1}."
+  },
+  {
+    "zh": "還原完成：已還原 {0} 項{1}。",
+    "en": "Restore complete: {0} restored{1}."
+  },
+  {
+    "zh": "；失敗 {0} 項，請查看清單",
+    "en": "; {0} failed, review the list"
+  },
+  {
+    "zh": "來源缺少可用的原始 resource fork，而此 SMB 未通過 macOS 原生圖示重建測試；未修改此資料夾",
+    "en": "Source has no usable raw resource fork and SMB failed native reconstruction testing; this folder was not modified"
+  },
+  {
+    "zh": "來源缺少可用的圖示 resource fork／影像",
+    "en": "Source has no usable icon resource fork or image"
+  },
+  {
+    "zh": "不安全的相對路徑",
+    "en": "Unsafe relative path"
+  },
+  {
+    "zh": "路徑包含符號連結",
+    "en": "Path contains a symbolic link"
+  },
+  {
+    "zh": "略過符號連結：{0}",
+    "en": "Skipped symbolic link: {0}"
+  },
+  {
+    "zh": "目錄不存在或類型不符",
+    "en": "Folder does not exist or has an unexpected type"
+  },
+  {
+    "zh": "Icon\\r 不是一般檔案，拒絕操作",
+    "en": "Icon\\r is not a regular file; operation refused"
+  },
+  {
+    "zh": "Icon\\r 大於 64 MB",
+    "en": "Icon\\r exceeds 64 MB"
+  },
+  {
+    "zh": "Icon\\r 有硬連結，拒絕操作",
+    "en": "Icon\\r has hard links; operation refused"
+  },
+  {
+    "zh": "FinderInfo 長度異常",
+    "en": "Unexpected FinderInfo length"
+  },
+  {
+    "zh": "來源 Icon\\r FinderInfo 長度異常",
+    "en": "Unexpected source Icon\\r FinderInfo length"
+  },
+  {
+    "zh": "目標 Icon\\r 含有資料，避免覆蓋而略過",
+    "en": "Destination Icon\\r contains data; skipped to prevent overwriting"
+  },
+  {
+    "zh": "目標已變動，已略過",
+    "en": "Destination changed; skipped"
+  },
+  {
+    "zh": "resource fork 讀回不一致",
+    "en": "Resource fork read-back mismatch"
+  },
+  {
+    "zh": "圖示 metadata 讀回驗證失敗",
+    "en": "Icon metadata read-back verification failed"
+  },
+  {
+    "zh": "原生圖示 metadata 讀回驗證失敗",
+    "en": "Native icon metadata read-back verification failed"
+  },
+  {
+    "zh": "macOS 原生重新套用失敗",
+    "en": "macOS native icon application failed"
+  },
+  {
+    "zh": "自動回復失敗，已停止後續寫入。請保留備份並檢查目標",
+    "en": "Rollback failed; subsequent writes stopped. Keep the backup and inspect the destination"
+  },
+  {
+    "zh": "不支援或無效的備份版本／項目數",
+    "en": "Unsupported or invalid backup version / item count"
+  },
+  {
+    "zh": "備份項目不是一般檔案或過大",
+    "en": "Backup entry is not a regular file or is too large"
+  },
+  {
+    "zh": "備份含重複路徑",
+    "en": "Backup contains duplicate paths"
+  },
+  {
+    "zh": "備份必須存於 AFP／SMB 根目錄以外",
+    "en": "Backups must be outside the AFP and SMB roots"
+  },
+  {
+    "zh": "請把備份存至本機 APFS／HFS+ 磁碟",
+    "en": "Save backups to a local APFS / HFS+ disk"
+  },
+  {
+    "zh": "正式處理必須有本機備份位置",
+    "en": "Apply requires a local backup location"
+  },
+  {
+    "zh": "請先掃描，找到可套用的圖示",
+    "en": "Scan first to find applicable icons"
+  },
+  {
+    "zh": "來源與目標不可選擇同一路徑",
+    "en": "Source and destination cannot be the same path"
+  },
+  {
+    "zh": "上次寫入中斷，請勾選「復原中斷寫入」後再還原",
+    "en": "Previous write was interrupted; enable Recover interrupted writes before restoring"
+  },
+  {
+    "zh": "圖示已在套用後改動，拒絕覆蓋；請保留備份",
+    "en": "Icon changed after applying; overwrite refused. Keep the backup"
+  },
+  {
+    "zh": "還原後讀回結果不一致",
+    "en": "Restore read-back mismatch"
+  },
+  {
+    "zh": "已停止；已完成項目保留，可用備份還原",
+    "en": "Stopped; completed items remain and can be restored from backup"
+  },
+  {
+    "zh": "metadata 超過 64 MB，已略過",
+    "en": "Metadata exceeds 64 MB; skipped"
+  },
+  {
+    "zh": "metadata 名稱清單過大",
+    "en": "Metadata name list is too large"
+  },
+  {
+    "zh": "metadata 清單已變動",
+    "en": "Metadata name list changed"
+  },
+  {
+    "zh": "metadata 讀取重試失敗",
+    "en": "Metadata read retries failed"
+  },
+  {
+    "zh": "伺服器未保留 FinderInfo",
+    "en": "Server did not preserve FinderInfo"
+  },
+  {
+    "zh": "伺服器未保留 resource fork",
+    "en": "Server did not preserve the resource fork"
+  },
+  {
+    "zh": "替換較小 resource fork 時出現殘留資料",
+    "en": "Trailing data remained after replacing with a smaller resource fork"
+  },
+  {
+    "zh": "請拖入 Finder 的已掛載資料夾，不接受網路網址",
+    "en": "Drop a mounted folder from Finder; network URLs are not accepted"
+  },
+  {
+    "zh": "讀取 {0}",
+    "en": "Reading {0}"
+  },
+  {
+    "zh": "讀取 {0}（預期 {1} bytes）",
+    "en": "Reading {0} (expected {1} bytes)"
+  },
+  {
+    "zh": "寫入 {0}",
+    "en": "Writing {0}"
+  },
+  {
+    "zh": "移除 {0}",
+    "en": "Removing {0}"
+  },
+  {
+    "zh": "列出 metadata",
+    "en": "Listing metadata"
+  },
+  {
+    "zh": "開啟舊 resource fork",
+    "en": "Opening existing resource fork"
+  },
+  {
+    "zh": "截短舊 resource fork",
+    "en": "Truncating existing resource fork"
+  },
+  {
+    "zh": "無法建立 Icon\\r",
+    "en": "Could not create Icon\\r"
+  },
+  {
+    "zh": "{0} 長度持續變動：預期 {1}，實際 {2} bytes",
+    "en": "{0} length kept changing: expected {1}, got {2} bytes"
+  },
+  {
+    "zh": "來源已於掃描後變動：{0}。請重新掃描",
+    "en": "Source changed after scanning: {0}. Scan again"
+  },
+  {
+    "zh": "目標已於掃描後變動：{0}。請重新掃描",
+    "en": "Destination changed after scanning: {0}. Scan again"
+  },
+  {
+    "zh": "SMB 根目錄與備份記錄不一致，請選擇：{0}",
+    "en": "SMB root does not match the backup; choose: {0}"
+  },
+  {
+    "zh": "無法列出子目錄：{0}",
+    "en": "Could not list subfolders: {0}"
+  },
+  {
+    "zh": "測試資料夾未能刪除：{0}。{1}",
+    "en": "Could not remove test folder: {0}. {1}"
+  },
+  {
+    "zh": "目標未通過 metadata 測試：{0}。請檢查 NAS 的 macOS／SMB metadata 支援設定。",
+    "en": "Destination metadata test failed: {0}. Check NAS macOS / SMB metadata support settings."
+  },
+  {
+    "zh": "此目錄使用 {0}：{1}\n這個區域需要 {2}。請改拖另一個掛載，或從「已掛載的 {3}」選取。",
+    "en": "This folder uses {0}: {1}\nThis area requires {2}. Drop the other mount or select it from Mounted {3} shares."
+  },
+  {
+    "zh": "{0}；回復失敗：{1}；備份：{2}",
+    "en": "{0}; rollback failed: {1}; backup: {2}"
+  },
+  {
+    "zh": "原樣複製 resource fork；已驗證 metadata；Finder 顯示請另行確認",
+    "en": "Raw resource fork copied; metadata verified; check Finder appearance separately"
+  },
+  {
+    "zh": "原生影像備援（重新生成）；已驗證 metadata；Finder 顯示請另行確認",
+    "en": "Native image fallback (reconstructed); metadata verified; check Finder appearance separately"
+  },
+  {
+    "zh": "FinderInfo：自訂圖示；Icon\\r resource fork：{0} bytes；資料夾 fork：{1} bytes",
+    "en": "FinderInfo: custom icon; Icon\\r resource fork: {0} bytes; folder fork: {1} bytes"
+  },
+  {
+    "zh": "FinderInfo：無旗標；Icon\\r resource fork：{0} bytes；資料夾 fork：{1} bytes",
+    "en": "FinderInfo: no custom flag; Icon\\r resource fork: {0} bytes; folder fork: {1} bytes"
+  }
+]
